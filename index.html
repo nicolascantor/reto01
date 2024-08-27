@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <title>Document</title>
+</head>
+
+<body class="main">
+    <div class="alert-copy" id="alert-copy-text">
+        <p class="alert-text">Texto copiado!</p>
+    </div>
+    <div class="alert-warning" id="alert-warning">
+        <p class="warning-text">Ingrese el texto a encryptar o desencriptar</p>
+    </div>
+
+    <div class="panel-left">
+        <div class="input-text">
+            <textarea class="input-encrypted" name="input-encrypted" id="input-encrypted"
+                placeholder="Ingrese el texto aqui"></textarea>
+        </div>
+        <div class="panel-action">
+            <p class="notice-text">
+                <i class="fa-solid fa-circle-exclamation fa-sm" style="color: #495057;"></i>
+                solo letras minusculas y sin acentos
+            </p>
+            <div class="panel-buttons">
+                <input type="button" class="encrypted-button" value="Encriptar" onclick="encrypted();">
+                <input type="button" class="desencrypted-button" value="Desencriptar" onclick="desencrypted();">
+            </div>
+        </div>
+    </div>
+    <div class="request-encrypted-text" id="final-text">
+        <img src="resources/image.png" alt="imagen">
+        <span class="none-text">
+            <strong>Ningún mensaje fue encontrado</strong>
+        </span>
+        <span class="suggest-text">
+            Ingresa el texto que desees encriptar o desencriptar.
+        </span>
+        <span>
+
+        </span>
+    </div>
+    <div class="final-encrypted-text" id="final-encrypted-text">
+        <p class="exit-text" id="exit-text">
+
+        </p>
+        <input type="button" class="copy-button" value="Copiar" onclick="copiarContenido();">
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/177a9c04fa.js" crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
+
+</html>
